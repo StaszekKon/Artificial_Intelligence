@@ -1,12 +1,12 @@
-install.packages("rattle")
-library(rattle)
-install.packages("rattle.data")
-library(rattle.data)
+#install.packages("rattle")
+#library(rattle)
+#install.packages("rattle.data")
+#library(rattle.data)
 #install.packages("gdata")
 #library("gdata")
 #install.packages("xlsx")
 #library("xlsx")
-#poni¿sza bibioteka dzia3a
+#bibioteka do czytania Excela 
 install.packages("readxl")
 library("readxl")
 rozwody_regresja <- read_excel("C:\\Users\\ZSZ\\Documents\\project_sztuczna_inteligencja\\rozwody_2017_wojewodztwa.xlsx")
