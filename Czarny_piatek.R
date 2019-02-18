@@ -8,7 +8,7 @@
 # poniewa¿ kilka zmiennych ma charakter kategoryczny, a niektóre
 # inne podejœcia to "Przewidywanie wieku konsumenta",
 # a nawet "Przewidywanie kategorii zakupionych towarów". 
-#odczyt zboiru danych BlackFraiday.csv
+#odczyt zbioru danych BlackFraiday.csv
 dataBlackFriday = read.csv("C:\\Users\\ZSZ\\Documents\\project_sztuczna_inteligencja\\BlackFriday.csv")
 #sprawdzenie struktury naszego zbioru danych
 # struktura data.frame 537577 obserwacji (wierszy) i 12 kolumn (zmiennych)
