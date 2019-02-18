@@ -7,7 +7,7 @@
 #Problem klasyfikacji mo¿e byæ równie¿ rozstrzygniêty w tym zbiorze danych,
 #poniewa¿ kilka zmiennych ma charakter kategoryczny, a niektóre
 #inne podejœcia to "Przewidywanie wieku konsumenta",
-# a nawet "Przewidywanie kategorii zakupionych towarów". 
+#a nawet "Przewidywanie kategorii zakupionych towarów". 
 #odczyt zbioru danych BlackFraiday.csv
 dataBlackFriday = read.csv("C:\\Users\\ZSZ\\Documents\\project_sztuczna_inteligencja\\BlackFriday.csv")
 #sprawdzenie struktury naszego zbioru danych
