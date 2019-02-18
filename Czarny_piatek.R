@@ -1,4 +1,4 @@
-#Analiza zbioru danych black friday - przyk³ad transakcji dokonanych w sklepie 
+#Analiza zbioru danych black friday - przyk³ad transakcji dokonanych w sklepie detalicznym
 #Zbiór danych to przyk³ad transakcji dokonanych w sklepie detalicznym. 
 #Sklep chce lepiej poznaæ zachowanie klientów wobec ró¿nych produktów. 
 #W szczególnoœci tutaj problemem jest problem regresji,
@@ -24,7 +24,7 @@ tail(dataBlackFriday)
 #minimum, 1 kwartyl, 2 kwartyl (mediana), œrednia, 3 kwartyl, maximum
 #informacje o kwartylach https://mfiles.pl/pl/index.php/Kwartyl
 summary(dataBlackFriday)
-#################################
+#######################################################
 head(dataBlackFriday)
 dataBlackFriday[1:2,11:12]
 sum(dataBlackFriday$Purchase)
@@ -33,7 +33,7 @@ sum(zak)
 data = dataBlackFriday[dataBlackFriday$Age!="55+", 12]
 head(data)
 sum(data$Purchase)
-##################################
+########################################################
 #mydata$Marital_Status = as.factor(mydata$Marital_Status)
 #?plot
 #pakiet do agregacji danych
@@ -45,14 +45,14 @@ library(ggplot2)
 #df = c(mydata$Purchase,mydata$Age)
 #summary(df)
 #?ggplot
-###################################################
+########################################################
 x= group_by(dataBlackFriday, Age)
 x
 ilosc=summarize(x, ilosc_zakup=n())
 ilosc
 y=summarize(x, sumowanie= sum(Purchase))  
 y
-###################################################
+#######################################################
 #analiza kwot wydanych na zakupy
 zakupy = dataBlackFriday$Purchase
 age = dataBlackFriday$Age
@@ -77,7 +77,7 @@ labs(
         x = "przedzia³y wiekowe - Age",
         y = "suma zakupów",
         title = paste(
-            "Sumy zakupów poczynionych przez ró¿ne grupy wiekowe"
+            "Sumy zakupów wykonanych przez ró¿ne grupy wiekowe"
         
 ))
 
@@ -100,7 +100,7 @@ labs(
         x = "przedzia³y wiekowe - Age",
         y = "iloœæ zakupów",
         title = paste(
-            "Iloœci zakupów poczynionych przez ró¿ne grupy wiekowe"
+            "Iloœci zakupów wykonanych przez ró¿ne grupy wiekowe"
         
 ))
 #################################################
@@ -159,7 +159,7 @@ labelsFM <- paste(labelsFM,"%",sep=" ") # ad % to labels
 circle <- pie3D(valuesFM,labels=labelsFM, explode=0.1,
    main="Podzia³ klientów na mê¿czyzny i kobiety")
 
-#######################
+########################################################
 #inaczej bez sql wykres ko³owy
 gender <- data.frame(dataBlackFriday$Gender)
 gender
@@ -182,7 +182,7 @@ circle <- pie3D(valuesFM,labels=labelsFM, explode=0.1,
    main="Podzia³ klientów na mê¿czyzny i kobiety")
 
 
-########################
+########################################################
 dataBlackFriday %>% 
 #Step 2
 group_by(City_Category) %>% 
@@ -202,6 +202,9 @@ labs(
             "Iloœci zakupów z podzia³em na kategorie miasta"
         
 ))
+
+###########################################################
+#ró¿ne testy
 dataBlackFriday
 names(dataBlackFriday)
 str(dataBlackFriday)
