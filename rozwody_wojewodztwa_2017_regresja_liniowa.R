@@ -13,9 +13,7 @@ rozwody_regresja <- read_excel("C:\\Users\\ZSZ\\Documents\\project_sztuczna_inte
 rozwody_regresja
 head(rozwody_regresja)
 tail(rozwody_regresja)
-
 str(rozwody_regresja)
-
 summary(rozwody_regresja)
 dim(rozwody_regresja)
 rozwody <- rozwody_regresja$rozwody
