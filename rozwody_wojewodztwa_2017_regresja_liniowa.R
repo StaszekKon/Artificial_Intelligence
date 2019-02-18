@@ -1,3 +1,4 @@
+#instalacja pakietu rattle
 #install.packages("rattle")
 #library(rattle)
 #install.packages("rattle.data")
