@@ -5,8 +5,8 @@
 #w którym próbujemy przewidzieæ zmienn¹ zale¿n¹ (iloœæ zakupów) za pomoc¹ informacji
 #zawartych w innych zmiennych.
 #Problem klasyfikacji mo¿e byæ równie¿ rozstrzygniêty w tym zbiorze danych,
-# poniewa¿ kilka zmiennych ma charakter kategoryczny, a niektóre
-# inne podejœcia to "Przewidywanie wieku konsumenta",
+#poniewa¿ kilka zmiennych ma charakter kategoryczny, a niektóre
+#inne podejœcia to "Przewidywanie wieku konsumenta",
 # a nawet "Przewidywanie kategorii zakupionych towarów". 
 #odczyt zbioru danych BlackFraiday.csv
 dataBlackFriday = read.csv("C:\\Users\\ZSZ\\Documents\\project_sztuczna_inteligencja\\BlackFriday.csv")
