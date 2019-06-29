@@ -1,5 +1,4 @@
 #Analiza zbioru danych black friday - przyk³ad transakcji dokonanych w sklepie detalicznym
-#Zbiór danych to przyk³ad transakcji dokonanych w sklepie detalicznym. 
 #Sklep chce lepiej poznaæ zachowanie klientów wobec ró¿nych produktów. 
 #W szczególnoœci tutaj problemem jest problem regresji,
 #w którym próbujemy przewidzieæ zmienn¹ zale¿n¹ (iloœæ zakupów) za pomoc¹ informacji
