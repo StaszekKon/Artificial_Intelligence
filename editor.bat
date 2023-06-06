@@ -6,7 +6,6 @@ IF ERRORLEVEL 1 (
 	ECHO Warning!!! No git.exe in Path 
 ) ELSE (
 	git status oo.txt
-
 	if not errorlevel 1 (
 		echo !!!!
 		echo Warning !!! oo.txt jest przestarzały!
