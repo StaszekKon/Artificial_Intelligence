@@ -14,5 +14,6 @@ IF ERRORLEVEL 1 (
 		choice /m ---------------Czy chcesz zaktualizowac lokalba kopie? ------"
 		if errorlevel 1 (
 			git pull origin
+		)
 	)
 )
