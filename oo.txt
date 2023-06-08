@@ -6,3 +6,4 @@ kolejna linika
 6666
 777
 99999
+0000aaaaa
