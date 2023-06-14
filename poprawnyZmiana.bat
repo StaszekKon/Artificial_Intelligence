@@ -1,21 +1,22 @@
 @echo off
 
 setlocal
-set /p choice=Chcesz zaktualizować lokalne repozytorium? (tak/nie)
-if "%choice%"=="tak" (
-    set "remote=origin"
-    set "branch=master"
+set "remote=origin"
+set "branch=master"
+set /p choice=Chcesz zaktualizowac lokalne repozytorium? (y/n)
+if "%choice%"=="y" (
+    
     git fetch %remote% %branch%
 
     for /f "delims=" %%i in ('git log HEAD..%remote%/%branch% --oneline') do (
-     set changes=true
+      set changes=true
     )
 
     if defined changes (
       git pull %remote% %branch%
     )
 ) else (
-      echo Aktualizacja lokalnego repozytorium została anulowana.
+      echo Aktualizacja lokalnego repozytorium zostala anulowana.
 )
 
 
