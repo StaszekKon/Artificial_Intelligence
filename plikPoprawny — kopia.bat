@@ -1,7 +1,8 @@
-@echo off
-setlocal
+@echo on
+
 git remote update > nul 2>&1
-set /a behind=%(git rev-list --count HEAD..origin/master)% 2> nul
-echo %behind%
-endlocal
+
+git rev-list --count HEAD..origin/master > test.txt
+set cos=< test.txt
+
 pause
