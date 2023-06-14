@@ -1,4 +1,4 @@
-@echo on
+@echo off
 
 git remote update > nul 2>&1
 set /a behind=%(git rev-list --count HEAD..origin/master)%
